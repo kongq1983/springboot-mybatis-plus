@@ -1,0 +1,164 @@
+
+<applications>
+
+    <application id="application000000000000000000001">
+        <name>入园入学招生报名系统</name>
+        <appCode>100</appCode>
+        <url>http://www.baidu.com</url>
+        <appId>appid1234567890</appId>
+        <appSecret>1234567890</appSecret>
+
+        <applicationfunctions>
+            <applicationfunction id="applicationfunction0000000010001">
+                <name>用户管理</name>
+                <funcCode>10001</funcCode>
+                <funcUrl>http://www.google.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010002">
+                <name>区域管理</name>
+                <funcCode>10002</funcCode>
+                <funcUrl>http://www.google.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010003">
+                <name>机构管理</name>
+                <funcCode>10003</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010004">
+                <name>招生设置</name>
+                <funcCode>10004</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010005">
+                <name>注册报名</name>
+                <funcCode>10005</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010006">
+                <name>报名管理</name>
+                <funcCode>10006</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010007">
+                <name>信息审核</name>
+                <funcCode>10007</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010008">
+                <name>录取调剂</name>
+                <funcCode>10008</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000010009">
+                <name>查询功能</name>
+                <funcCode>10009</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+        </applicationfunctions>
+
+    </application>
+
+
+    <application id="application000000000000000000002">
+        <name>学籍系统</name>
+        <appCode>200</appCode>
+        <url>http://www.baidu.com</url>
+        <appId>appid1234567891</appId>
+        <appSecret>1234567891</appSecret>
+
+        <applicationfunctions>
+            <applicationfunction id="applicationfunction0000000020001">
+                <name>用户管理</name>
+                <funcCode>20001</funcCode>
+                <funcUrl>http://www.google.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020002">
+                <name>下级机构管理</name>
+                <funcCode>20002</funcCode>
+                <funcUrl>http://www.google.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020003">
+                <name>组织机构管理</name>
+                <funcCode>20003</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020004">
+                <name>布局调整</name>
+                <funcCode>20004</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020005">
+                <name>功能设置</name>
+                <funcCode>20005</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020006">
+                <name>学校管理</name>
+                <funcCode>20006</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020007">
+                <name>年级管理</name>
+                <funcCode>20007</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020008">
+                <name>班级管理</name>
+                <funcCode>20008</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020009">
+                <name>学生设置</name>
+                <funcCode>20009</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020010">
+                <name>信息变更</name>
+                <funcCode>20010</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020011">
+                <name>查询统计</name>
+                <funcCode>20011</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020012">
+                <name>移动家长端</name>
+                <funcCode>20012</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+            <applicationfunction id="applicationfunction0000000020013">
+                <name>移动管理端</name>
+                <funcCode>20013</funcCode>
+                <funcUrl>http://www.yahoo.com</funcUrl>
+            </applicationfunction>
+
+
+        </applicationfunctions>
+
+    </application>
+
+
+
+</applications>
