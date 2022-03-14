@@ -1,0 +1,10 @@
+
+
+
+@ApiImplicitParams({
+            @ApiImplicitParam(name = "ids", value = "多个ID" ,dataType = "String", required = true)
+    })
+
+
+
+ApiIgnore 对某个方法忽略

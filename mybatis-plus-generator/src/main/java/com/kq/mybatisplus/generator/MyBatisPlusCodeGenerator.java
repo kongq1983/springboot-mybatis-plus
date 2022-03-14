@@ -40,7 +40,7 @@ public class MyBatisPlusCodeGenerator {
 				"au_application", "au_business_scope_app", "au_app_manager", "au_user_group",
 				"au_role", "au_role_resource", "au_resource", "au_role_app", "au_app_tn_user", "au_user_app"
 				, "au_user_usable_app_rec"};*/
-        String[] tables = new String[]{"pm_admin","pm_application_category"};
+        String[] tables = new String[]{"pm_admin","pm_application_category","pm_application","pm_role"};
         String[] tablePrefixs = new String[]{};
         executeCode(PACKAGE_NAME, tables, tablePrefixs);
     }
@@ -74,14 +74,22 @@ public class MyBatisPlusCodeGenerator {
         // 数据源配置
         DataSourceConfig config = new DataSourceConfig();
 
+        // 172.16.5.148:6006
+//        config.setUsername("admin");
+//        config.setPassword("26f696b8");
+
+        String server = "172.16.5.149:6006/pub";
+        String username = "root";
+        String password = "310012";
+
         if (DbType.MYSQL.getDb().equals(DB_TYPE)) {
             //mysql
             config.setDbType(DbType.MYSQL);
-            config.setUrl("jdbc:mysql://172.16.5.148:6006/test?allowMultiQueries=true&useUnicode=true" +
+            config.setUrl("jdbc:mysql://"+server+"?allowMultiQueries=true&useUnicode=true" +
                     "&characterEncoding=utf-8&serverTimezone=GMT");
             config.setDriverName("com.mysql.cj.jdbc.Driver");
-            config.setUsername("admin");
-            config.setPassword("26f696b8");
+            config.setUsername(username);
+            config.setPassword(password);
         } else if (DbType.ORACLE.getDb().equals(DB_TYPE)) {
             //oracle
             config.setDbType(DbType.ORACLE);
