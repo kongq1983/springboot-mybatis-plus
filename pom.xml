@@ -13,19 +13,25 @@
         <module>mybatis-plus-app-import</module>
         <module>mybatis-plus-generator</module>
         <module>mybatis-plus-generator-code</module>
+        <module>swagger3</module>
     </modules>
     <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <swagger-version>3.0.0</swagger-version>
+        <swagger-ui-version>3.0.3</swagger-ui-version>
+        <lombok-version>1.18.20</lombok-version>
+        <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
     </properties>
 
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.6.RELEASE</version>
+        <!--<version>2.2.6.RELEASE</version>-->
+        <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -38,7 +44,34 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>3.4.1</version>
             </dependency>
+
+             <!-- swagger3  一个做ui 一个做提供接口的-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${swagger-ui-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+
         </dependencies>
+
 
     </dependencyManagement>
 
