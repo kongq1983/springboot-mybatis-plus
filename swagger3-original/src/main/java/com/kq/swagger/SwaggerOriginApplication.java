@@ -2,6 +2,7 @@ package com.kq.swagger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.oas.annotations.EnableOpenApi;
 
 /**
  *
@@ -11,12 +12,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2020-0630
  */
 
+
 @SpringBootApplication
-public class SwaggerApplication {
+public class SwaggerOriginApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(SwaggerApplication.class, args);
+        SpringApplication.run(SwaggerOriginApplication.class, args);
 
     }
 

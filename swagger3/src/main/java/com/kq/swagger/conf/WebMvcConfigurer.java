@@ -15,10 +15,12 @@ public class WebMvcConfigurer extends WebMvcConfigurationSupport {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
-        registry.addResourceHandler("doc.htm").addResourceLocations(
+        registry.addResourceHandler("doc.html").addResourceLocations(
                 "classpath:/META-INF/resources/");
-       /* registry.addResourceHandler("/webjars/**").addResourceLocations(
-                "classpath:/META-INF/resources/webjars/");*/
+
+        registry.addResourceHandler("/webjars/**").addResourceLocations(
+                "classpath:/META-INF/resources/webjars/");
+
         super.addResourceHandlers(registry);
 
     }

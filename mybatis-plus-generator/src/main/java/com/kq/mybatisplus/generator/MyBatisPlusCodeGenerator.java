@@ -40,7 +40,7 @@ public class MyBatisPlusCodeGenerator {
 				"au_application", "au_business_scope_app", "au_app_manager", "au_user_group",
 				"au_role", "au_role_resource", "au_resource", "au_role_app", "au_app_tn_user", "au_user_app"
 				, "au_user_usable_app_rec"};*/
-        String[] tables = new String[]{"pm_admin","pm_application_category","pm_application","pm_role"};
+        String[] tables = new String[]{"pm_admin","pm_application_category","pm_application","pm_role","pm_application_user_type","pm_app_func","pm_scene","pm_scene_app","pm_scene_func"};
         String[] tablePrefixs = new String[]{};
         executeCode(PACKAGE_NAME, tables, tablePrefixs);
     }

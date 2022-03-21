@@ -14,6 +14,7 @@
         <module>mybatis-plus-generator</module>
         <module>mybatis-plus-generator-code</module>
         <module>swagger3</module>
+        <module>swagger3-original</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -21,7 +22,8 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <swagger-version>3.0.0</swagger-version>
-        <swagger-ui-version>3.0.3</swagger-ui-version>
+        <!--<swagger-ui-version>3.0.3</swagger-ui-version>-->
+        <swagger-ui-version>3.0</swagger-ui-version>
         <lombok-version>1.18.20</lombok-version>
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
     </properties>
