@@ -32,6 +32,7 @@ public class XmlUtil {
         System.out.println("start=============================");
         for(PmApplication pm : list) {
             System.out.println(pm);
+            System.out.println(pm.getFunctionList());
         }
         System.out.println("e-n-d=============================");
     }
