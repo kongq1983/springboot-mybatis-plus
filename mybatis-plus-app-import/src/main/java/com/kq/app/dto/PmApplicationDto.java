@@ -1,12 +1,11 @@
-package com.kq.app.entity;
+package com.kq.app.dto;
 
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.github.crab2died.annotation.ExcelField;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 /**
  * <p>
@@ -18,29 +17,36 @@ import java.util.List;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@TableName("pm_application")
-public class PmApplication implements Serializable {
+public class PmApplicationDto implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+
     private String id;
 
+    @ExcelField(title = "应用名称", order = 1)
     private String name;
 
+    @ExcelField(title = "应用名称", order = 2)
     private String shortName;
 
+    @ExcelField(title = "应用编码", order = 1)
     private String appCode;
 
+    @ExcelField(title = "应用LOGO", order = 9)
     private String logo;
 
+    @ExcelField(title = "部署方式", order = 1)
     private String deployType;
 
+    @ExcelField(title = "应用类型", order = 1)
     private String appType;
 
     private String categoryId;
 
     private String appDevName;
 
+    @ExcelField(title = "应用排序", order = 1)
     private Integer sortNumber;
 
     private String description;
@@ -51,10 +57,13 @@ public class PmApplication implements Serializable {
 
     private String tokenChgMode;
 
+    @ExcelField(title = "应用路径", order = 8)
     private String url;
 
+    @ExcelField(title = "AppID", order = 6)
     private String appId;
 
+    @ExcelField(title = "AppSecret", order = 7)
     private String appSecret;
 
     private String appVersion;
@@ -70,9 +79,6 @@ public class PmApplication implements Serializable {
     private String createUser;
 
     private String editUser;
-
-
-    private List<PmApplicationFunction> functionList;
 
 
 }
