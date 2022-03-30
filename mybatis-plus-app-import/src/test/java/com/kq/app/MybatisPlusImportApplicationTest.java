@@ -3,7 +3,6 @@ package com.kq.app;
 
 import com.kq.app.service.ApplicatiionService;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
