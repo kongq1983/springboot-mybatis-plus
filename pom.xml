@@ -16,6 +16,7 @@
         <module>swagger3</module>
         <module>swagger3-original</module>
         <module>tool</module>
+        <module>encrypt</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -27,6 +28,7 @@
         <swagger-ui-version>3.0</swagger-ui-version>
         <lombok-version>1.18.20</lombok-version>
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
+        <fastjson-version>1.2.73</fastjson-version>
     </properties>
 
 
@@ -73,10 +75,23 @@
                 <version>${hibernate-validator.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+
         </dependencies>
 
 
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
