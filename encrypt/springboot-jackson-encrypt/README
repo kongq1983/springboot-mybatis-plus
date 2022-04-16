@@ -3,3 +3,6 @@
 
 https://github.com/EalenXie/jackson-desensitize
 https://blog.csdn.net/weixin_44610216/article/details/118978414
+
+自定义Jackson注解
+可以使用@JacksonAnnotationsInside来开发自定义注解  s_department
