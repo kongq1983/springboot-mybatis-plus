@@ -42,7 +42,7 @@ public class MyBatisPlusCodeGenerator {
 				, "au_user_usable_app_rec"};*/
         String[] tables = new String[]{"pm_admin","pm_application_category","pm_application","pm_role"
                 ,"pm_application_user_type","pm_app_func","pm_scene","pm_scene_app","pm_scene_func",
-        "pub_teaching_class","pub_teaching_class_student","pub_school","pub_dep","pub_dict"};
+        "pub_teaching_class","pub_teaching_class_student","pub_school","pub_dep","pub_dict","pub_tenant_config"};
 
 //        String[] tables = new String[]{"application"};
         String[] tablePrefixs = new String[]{};

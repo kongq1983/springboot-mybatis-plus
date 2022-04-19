@@ -12,6 +12,7 @@
     <modules>
         <module>springboot-fasterjson-encrypt</module>
         <module>springboot-jackson-encrypt</module>
+        <module>springboot-logback-encrypt</module>
     </modules>
 
     <artifactId>encrypt</artifactId>
