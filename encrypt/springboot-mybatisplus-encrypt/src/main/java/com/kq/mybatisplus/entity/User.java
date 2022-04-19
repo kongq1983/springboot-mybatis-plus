@@ -4,13 +4,15 @@ import com.kq.mybatisplus.annotations.Desensitization;
 import com.kq.mybatisplus.enums.DesensitionType;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author kq
  * @date 2022-02-15 13:58
  * @since 2020-0630
  */
 @Data
-public class User {
+public class User implements Serializable {
 
     private Long id;
 

@@ -3,8 +3,7 @@ package com.kq.mybatisplus.dto;
 
 /**
  * 数据传输对象
- *
- * @author qianyangyang
+ * @author
  * @since 3.0.0.0
  */
 public class DtoResult {

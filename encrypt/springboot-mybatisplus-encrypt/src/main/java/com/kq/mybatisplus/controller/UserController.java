@@ -22,7 +22,7 @@ public class UserController {
     private UserMapper userMapper;
 
 
-    @GetMapping(value = "/get/user")
+    @GetMapping(value = "/user/list")
     public DtoResult sendMessage(
 //            @RequestParam(value = "phone") String phone,
 //                                 @RequestParam(value = "type") Integer type
