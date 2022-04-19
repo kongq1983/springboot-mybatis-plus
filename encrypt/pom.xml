@@ -13,6 +13,7 @@
         <module>springboot-fasterjson-encrypt</module>
         <module>springboot-jackson-encrypt</module>
         <module>springboot-logback-encrypt</module>
+        <module>springboot-mybatisplus-encrypt</module>
     </modules>
 
     <artifactId>encrypt</artifactId>

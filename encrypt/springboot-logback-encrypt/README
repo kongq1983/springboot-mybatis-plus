@@ -9,3 +9,7 @@ https://github.com/liuchengyin01/LogbackDesensitization/tree/master/repo/pers/li
 mvn install:install-file -DgroupId=pers.liuchengyin -DartifactId=logback-desensitization -Dversion=1.0.0 -Dpackaging=jar -Dfile=logback-desensitization-1.0.0.jar
 
 mvn install:install-file -DgroupId=pers.liuchengyin -DartifactId=logback-desensitization -Dversion=1.0.0 -Dpackaging=jar -Dfile=logback-desensitization-1.0.0.jar
+
+
+mybatis数据脱敏方案;
+https://www.iteye.com/blog/wx1568088009-2446314
