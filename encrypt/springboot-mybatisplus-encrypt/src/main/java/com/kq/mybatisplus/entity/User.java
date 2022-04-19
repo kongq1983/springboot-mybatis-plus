@@ -16,7 +16,7 @@ public class User {
 
     @Desensitization(type = DesensitionType.REAL_NAME)  //脱敏定义
     private String name;
-    
+
     private Integer age;
     private String email;
 
