@@ -26,6 +26,8 @@ public class EmailTest {
         System.out.println(email.matches(EMAIL_REGEX));
         System.out.println(result);
         System.out.println("test123456@163.com".replaceAll(EMAIL_REGEX, replace));
+        System.out.println("test1@163.com".replaceAll(EMAIL_REGEX, replace));
+        System.out.println("te@163.com".replaceAll(EMAIL_REGEX, replace));
 
 
 
