@@ -3,6 +3,7 @@ package com.kq.mybatisplus.controller;
 import com.kq.mybatisplus.dto.DtoResult;
 import com.kq.mybatisplus.entity.User;
 import com.kq.mybatisplus.mapper.UserMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import java.util.List;
  * @date 2022-03-09 14:45
  * @since 2020-0630
  */
+@Slf4j
 @RestController
 public class UserController {
 
@@ -30,7 +32,7 @@ public class UserController {
 
 
         List<User> userList = userMapper.selectList(null);
-        System.out.println("userList="+userList);
+        log.info("userList="+userList);
 
         DtoResult result = new DtoResult();
         result.setResult(userList);
