@@ -20,6 +20,7 @@ import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ import java.util.Properties;
 /**
  * mybatis脱敏处理
  *
- * @author 傻根她弟
+ * @author
  *
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
@@ -40,6 +41,7 @@ import java.util.Properties;
                 RowBounds.class, ResultHandler.class }),
         @Signature(type = Executor.class, method = "query", args = { MappedStatement.class, Object.class,
                 RowBounds.class, ResultHandler.class, CacheKey.class, BoundSql.class }), })
+@Component
 public class DesensitizationInterceptor implements Interceptor {
     private static final Logger logger = LoggerFactory.getLogger(DesensitizationInterceptor.class);
 

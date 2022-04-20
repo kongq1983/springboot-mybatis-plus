@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="processName" value="pm"/>
+   <!-- <property resource="bootstrap.yml"/>-->
+    <springProperty scope="context" name="logging.path" source="logging.file.path"/>
+    <!--控制台输出-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%X{serviceName:-${processName}}|%thread|%X{traceId:-}|%X{key1:-}|%X{key2:-}] %-5level %logger{50}:%L - %msg%n</pattern>
+        </layout>
+    </appender>
+    <!-- 文件输出-->
+    <appender name="config-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${logging.path}/${processName}/config-service.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${logging.path}/${processName}/service/history/service.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+            <maxHistory>15</maxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%X{serviceName:-${processName}}|%thread|%X{traceId:-}|%X{key1:-}|%X{key2:-}] %-5level %logger{50}:%L - %msg%n</pattern>
+        </layout>
+    </appender>
+
+    <logger name="com.kq" level="debug"/>
+    <logger name="sun.rmi" level="info"/>
+
+    <root level="debug">
+        <appender-ref ref="config-log" />
+        <appender-ref ref="console"/>
+    </root>
+</configuration>
