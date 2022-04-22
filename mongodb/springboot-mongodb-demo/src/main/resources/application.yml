@@ -4,6 +4,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://root:root@172.16.5.3:27017/?authSource=admin
+      uri: mongodb://mongodb:123456@172.16.5.3:27017/?authSource=admin
       #数据库
       database: admin
