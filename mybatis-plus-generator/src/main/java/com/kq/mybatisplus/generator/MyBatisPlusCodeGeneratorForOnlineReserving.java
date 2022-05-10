@@ -39,7 +39,7 @@ public class MyBatisPlusCodeGeneratorForOnlineReserving {
 				"au_application", "au_business_scope_app", "au_app_manager", "au_user_group",
 				"au_role", "au_role_resource", "au_resource", "au_role_app", "au_app_tn_user", "au_user_app"
 				, "au_user_usable_app_rec"};*/
-        String[] tables = new String[]{"rs_product","rs_product_spec","rs_product_detail","rs_product_tag","rs_product_tag_relation"};
+        String[] tables = new String[]{"rs_product","rs_product_spec","rs_product_detail","rs_product_tag","rs_product_tag_relation","rs_product_photo"};
 
 //        String[] tables = new String[]{"application"};
         String[] tablePrefixs = new String[]{};
