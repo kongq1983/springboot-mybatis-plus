@@ -1,6 +1,6 @@
-package com.kq.validate.controller;
+package com.kq.swagger.contrller;
 
-import com.kq.validate.dto.ChangeStatusDto;
+import com.kq.swagger.dto.UserRequest;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
@@ -23,21 +23,10 @@ import java.util.Map;
 public class UserController extends BaseController{
 
 
-    @PostMapping("/status")
-    @ApiOperation(value = "应用启用-停用", notes = "应用启用-停用")
-//    public String changeStatus(@Validated @RequestBody ChangeStatusDto dto) {
-    public String changeStatus(@Validated ChangeStatusDto dto) {
-
-        log.info(" 接收参数 : {}",dto);
-//        Assert.isFalse(dto.getIsUsing().intValue()!=0 && dto.getIsUsing().intValue()!=1, "无效应用状态");
-        // 启用 停用
-        return "ok";
-    }
-
-
+    // I/O error while reading input message; nested exception is java.io.IOException: Stream closed
     @PostMapping("/add")
     @ApiOperation(value = "新增", notes = "新增用户")
-    public String add(@Validated @RequestBody ChangeStatusDto dto,@RequestBody String json, @RequestBody Map<String,Object> map) {
+    public String add(@Validated @RequestBody UserRequest dto, @RequestBody String json, @RequestBody Map<String,Object> map) {
 
         log.info(" 接收参数 : dto {}",dto);
         log.info(" 接收参数 : json {}",json);

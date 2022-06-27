@@ -59,9 +59,9 @@ public class ApplicationController {
 
         Application application = new Application();
 //        application.setIsUsing(1);
-        application.setUsing(1);
+        application.setIsUsing(1);
         application.setName("test");
-        application.setId(UUID.randomUUID().toString());
+        application.setId(System.currentTimeMillis());
         application.setAppCode("100");
         application.setAppType("1");
 

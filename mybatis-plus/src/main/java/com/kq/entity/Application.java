@@ -23,7 +23,7 @@ public class Application implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private Long id;
 
     private String name;
 
@@ -45,9 +45,9 @@ public class Application implements Serializable {
 
     private String description;
 
-    @TableField(value="is_using")
-//    private Integer isUsing;
-    private Integer using;
+//    @TableField(value="is_using")
+    private Integer isUsing;
+//    private Integer using;
 
     private String tokenValidMode;
 

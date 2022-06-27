@@ -44,15 +44,21 @@
         </dependency>
 
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-mate-starter</artifactId>
-            <version>1.2.4</version>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
         </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-mate-annotation</artifactId>
-            <version>1.2.4</version>
-        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-mate-starter</artifactId>-->
+<!--            <version>1.2.4</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-mate-annotation</artifactId>-->
+<!--            <version>1.2.4</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 
