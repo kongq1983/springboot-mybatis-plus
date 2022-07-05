@@ -1,5 +1,6 @@
 package com.kq.swagger.contrller;
 
+import com.kq.swagger.annotation.CheckSign;
 import com.kq.swagger.dto.UserRequest;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -24,6 +25,7 @@ public class UserController extends BaseController{
 
 
     // I/O error while reading input message; nested exception is java.io.IOException: Stream closed
+    @CheckSign
     @PostMapping("/add")
     @ApiOperation(value = "新增", notes = "新增用户")
     public String add(@Validated @RequestBody UserRequest dto, @RequestBody String json, @RequestBody Map<String,Object> map) {

@@ -1,6 +1,9 @@
 package com.kq.swagger.conf;
 
+import com.kq.swagger.interceptor.SignInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
@@ -11,6 +14,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  */
 @Configuration
 public class WebMvcConfigurer extends WebMvcConfigurationSupport {
+
+    @Autowired
+    private SignInterceptor signInterceptor;
+
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -23,6 +30,12 @@ public class WebMvcConfigurer extends WebMvcConfigurationSupport {
 
         super.addResourceHandlers(registry);
 
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        //addPathPatterns 用于添加拦截规则
+        registry.addInterceptor(signInterceptor);
     }
 
 }

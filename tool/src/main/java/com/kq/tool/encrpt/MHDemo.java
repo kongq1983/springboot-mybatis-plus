@@ -6,8 +6,8 @@ package com.kq.tool.encrpt;
  * @date 2022-06-27 15:58
  * @since 2020-0630
  */
+import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 //import org.json.JSONObject;
@@ -76,7 +76,10 @@ public class MHDemo {
             if(keyArray.length>0){
                 for (String k : keyArray) {
                     if (map.get(k).trim().length() > 0) // 参数值为空，则不参与签名
+                    {
                         sb.append(k).append("=").append(map.get(k).trim()).append("&");
+                    }
+
                 }
             }
             //step2-将step1得到的stringA拼接服务商密钥及客户密钥，然后进行md5并转换成大写得到签名 此处注意字符串末尾带有&
@@ -167,4 +170,8 @@ public class MHDemo {
         }
         return sb.toString();
     }
+
+
+
+
 }
