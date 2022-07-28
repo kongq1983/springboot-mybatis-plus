@@ -1,0 +1,100 @@
+{
+  "details": [
+    {
+      "identifier": "",
+      "product":
+      {
+        "categoryId": "pl100",
+        "categoryName": "RS荤菜分类",
+        "code": "",
+        "content": "",
+        "id": "p100",
+        "identity": ["XS","JZG"],
+        "name": "RS花菜",
+        "nutritionAnalysisUrl": "http://www.baidu.com/yyfx.url",
+        "cral":"卡路里100g",
+        "photos": [],
+        "salePrice": 0,
+        "specs": [
+          {
+            "id": "pl100",
+            "name": "花菜100g",
+            "remark": ""
+          }
+        ],
+        "type": 1
+      }
+    ,
+      "purchaseQuantityLimit": 0,
+      "saleDate": "2022-07-27",
+      "salePrice": 0,
+      "saleTypeId": "st100",
+      "saleTypeName": "早餐",
+      "stockQuantity": null
+    },
+    {
+      "identifier": "",
+      "product":
+      {
+        "categoryId": "pl100",
+        "categoryName": "RS荤菜",
+        "code": "",
+        "content": "",
+        "id": "p101",
+        "identity": [],
+        "ingredientIds": [
+          {
+            "categoryId": "pl101",
+            "categoryName": "RS蔬菜",
+            "code": "",
+            "content": "",
+            "id": "p102",
+            "name": "RS青菜",
+            "nutritionAnalysisUrl": "",
+            "photos": [],
+            "salePrice": 0,
+            "specs": [
+              {
+                "id": "pl111",
+                "name": "青菜100g",
+                "remark": "青菜100g备注"
+              }
+            ]
+          },
+          {
+            "categoryId": "pl102",
+            "categoryName": "RS肉类",
+            "code": "",
+            "content": "",
+            "id": "p103",
+            "name": "RS五花肉",
+            "nutritionAnalysisUrl": "",
+            "photos": ["http://www.baidu.com/whr.jpg"],
+            "salePrice": 0,
+            "specs": [
+              {
+                "id": "pl112",
+                "name": "五花肉100g",
+                "remark": ""
+              }
+            ]
+          }
+        ],
+        "name": "RS套餐AA",
+        "nutritionAnalysisUrl": "",
+        "photos": ["http://www.baidu.com/a.jpg"],
+        "salePrice": 0,
+        "type": 2
+      }
+    ,
+      "purchaseQuantityLimit": 0,
+      "saleDate": "2022-07-27",
+      "salePrice": 0,
+      "saleTypeId": "st100",
+      "saleTypeName": "早餐",
+      "stockQuantity": null
+    }
+  ],
+  "tenantId": "1",
+  "methodKey": "productPlanSave"
+}
