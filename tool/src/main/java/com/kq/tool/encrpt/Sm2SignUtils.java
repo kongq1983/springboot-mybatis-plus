@@ -112,7 +112,7 @@ public class Sm2SignUtils {
         System.out.println("服务端验证公钥:{}"+clientPublicKey);
         boolean verify = ssm2.verify(serviceStr.getBytes(StandardCharsets.UTF_8), HexUtil.decodeHex(serviceSign));
 //        log.info("服务端易通云签名:{}",serviceSign);
-        System.out.println("服务端易通云签名:{}"+serviceSign);
+        System.out.println("服务端接收签名:{}"+serviceSign);
 
         System.out.println("verify="+verify);
 

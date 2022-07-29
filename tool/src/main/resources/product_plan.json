@@ -95,6 +95,8 @@
       "stockQuantity": null
     }
   ],
-  "tenantId": "1",
-  "methodKey": "productPlanSave"
+  "tenantId": "10002",
+  "methodKey": "productPlanSave",
+  "timestamp": "1659061273583",
+  "nonce":"ramdomabde12345678bbcc"
 }
