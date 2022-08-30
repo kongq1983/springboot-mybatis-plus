@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
@@ -96,6 +97,26 @@ public class UserController {
         map.put("userList",userList);
 
         result.setResult(map);
+
+        return result;
+    }
+
+
+    @GetMapping(value = "/user/save")
+    public DtoResult saveUser(
+//            @RequestParam(value = "phone") String phone,
+//                                 @RequestParam(value = "type") Integer type
+    ) {
+
+        User user = new User();
+        user.setAge(18);
+        user.setBirthday(new Date());
+        user.setChineseBirthday(LocalDate.now());
+        user.setName("test");
+
+        userMapper.insert(user);
+
+        DtoResult result = new DtoResult();
 
         return result;
     }

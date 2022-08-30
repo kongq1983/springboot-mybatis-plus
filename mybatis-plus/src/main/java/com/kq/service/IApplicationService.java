@@ -13,4 +13,12 @@ import com.kq.entity.Application;
  */
 public interface IApplicationService extends IService<Application> {
 
+
+    public Long getMaxId();
+
+    public void saveApp(Application app);
+
+
+    public void saveAppNo(Application app);
+
 }
