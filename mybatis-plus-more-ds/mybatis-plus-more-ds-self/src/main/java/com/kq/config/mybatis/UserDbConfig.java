@@ -29,17 +29,16 @@ import javax.sql.DataSource;
 @MapperScan(basePackages = "com.kq.mapper.user",sqlSessionTemplateRef = "userDbSqlSessionTemplate")
 public class UserDbConfig {
 
-    @Bean
-    public PaginationInterceptor paginationInterceptor() {
-        return new PaginationInterceptor();
-    }
+//    @Bean
+//    public PaginationInterceptor paginationInterceptor() {
+//        return new PaginationInterceptor();
+//    }
 
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.user-ds")
-    @Primary
 //    @RefreshScope
-    public DataSource articleDataSource() {
+    public DataSource userDataSource() {
         return DataSourceBuilder.create().build();
     }
 
