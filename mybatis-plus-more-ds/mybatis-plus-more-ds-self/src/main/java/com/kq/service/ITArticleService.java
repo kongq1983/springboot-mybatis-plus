@@ -15,4 +15,6 @@ public interface ITArticleService extends IService<TArticle> {
 
     public void add(String id);
 
+    public void add1(String id);
+
 }

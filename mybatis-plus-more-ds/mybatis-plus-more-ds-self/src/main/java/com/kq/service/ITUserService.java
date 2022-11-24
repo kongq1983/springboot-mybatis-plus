@@ -13,4 +13,8 @@ import com.kq.entity.TUser;
  */
 public interface ITUserService extends IService<TUser> {
 
+    public void add(String id);
+
+    public void add1(String id);
+
 }

@@ -8,6 +8,7 @@ import com.kq.service.ITArticleService;
 import com.kq.service.ITUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -23,6 +24,7 @@ public class TArticleServiceImpl extends ServiceImpl<TArticleMapper, TArticle> i
     @Autowired
     private ITUserService userService;
 
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void add(String id) {
 
@@ -32,12 +34,15 @@ public class TArticleServiceImpl extends ServiceImpl<TArticleMapper, TArticle> i
 
         this.save(article);
 
+    }
 
-        TUser user = new TUser();
-        user.setName("user:"+id);
-        user.setIsDeleted(0);
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public void add1(String id) {
+        TArticle article = new TArticle();
+        article.setName("articel111111111111111111111111111111111111111122222222222222222222222222222222222222222222223333333333333333333333333333:"+id);
+        article.setIsDeleted(0);
 
-        userService.save(user);
-
+        this.save(article);
     }
 }

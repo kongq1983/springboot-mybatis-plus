@@ -5,6 +5,7 @@ import com.kq.entity.TArticle;
 import com.kq.entity.TUser;
 import com.kq.mapper.article.TArticleMapper;
 import com.kq.mapper.user.TUserMapper;
+import com.kq.service.IService;
 import com.kq.service.ITArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,15 +37,28 @@ public class TArticleController {
     @Autowired
     private TUserMapper userMapper;
 
+    @Autowired
+    private IService service;
+
 
     @GetMapping("/add")
     public Map<String,Object> get(@RequestParam("id") String id) {
 
         Map<String,Object> map = new HashMap<>();
-        articleService.add(id);
-
+        service.add(id);
 //        this.add(id);
+        map.put("id",id);
+        return map;
 
+    }
+
+
+    @GetMapping("/add1")
+    public Map<String,Object> addOne(@RequestParam("id") String id) {
+
+        Map<String,Object> map = new HashMap<>();
+        service.add1(id);
+//        this.add(id);
         map.put("id",id);
         return map;
 
