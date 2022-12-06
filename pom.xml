@@ -20,6 +20,8 @@
         <module>springboot-validate</module>
         <module>pattern</module>
         <module>mongodb</module>
+        <module>mybatis-plus-dynamic-table-name</module>
+        <module>mybatis-plus-more-ds</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -38,8 +40,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.6.RELEASE</version>
-        <!--<version>2.3.5.RELEASE</version>-->
+        <!--<version>2.2.6.RELEASE</version>-->
+        <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -88,6 +90,12 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>1.2.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.1</version>
             </dependency>
 
         </dependencies>
