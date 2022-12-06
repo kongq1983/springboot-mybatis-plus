@@ -43,7 +43,17 @@ public class UserController extends BaseController{
     @ApiOperation(value = "新增", notes = "新增用户")
     public String add(@Validated @RequestBody UserRequest dto) {
 
-        log.info(" 接收参数 : dto {}",dto);
+        log.info(" 新增用户-接收参数 : dto {}",dto);
+//        Assert.isFalse(dto.getIsUsing().intValue()!=0 && dto.getIsUsing().intValue()!=1, "无效应用状态");
+        return "ok";
+    }
+
+
+    @PostMapping("/add1")
+    @ApiOperation(value = "新增", notes = "新增用户")
+    public String add1(@Validated UserRequest dto) {
+
+        log.info(" 新增用户1-接收参数 : dto {}",dto);
 //        Assert.isFalse(dto.getIsUsing().intValue()!=0 && dto.getIsUsing().intValue()!=1, "无效应用状态");
         return "ok";
     }
