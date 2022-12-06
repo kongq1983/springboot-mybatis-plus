@@ -1,5 +1,6 @@
 package com.kq.swagger.dto;
 
+import com.kq.swagger.validate.EnumValue;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -20,6 +21,7 @@ public class UserRequest {
 
 
     @NotNull(message = "状态不能为空!")
+    @EnumValue(intValue = {0,1,2},message = "{user.status.invalid}")
     @ApiModelProperty(value = "状态 (1: 启用 0:停用)",required = true)
     /*** 1: 启用   0:停用  */
     protected Integer status;
