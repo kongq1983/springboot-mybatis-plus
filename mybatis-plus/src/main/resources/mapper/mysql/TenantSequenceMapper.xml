@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kq.mapper.TenantSequenceMapper">
+
+
+
+    <select id="getTenantNextSeq" resultType="java.lang.Long">
+
+        set @result=0;
+        call tenant_nextval_proc(#{tenantId},#{seqName},@result);
+        select @result;
+
+    </select>
+
+</mapper>
