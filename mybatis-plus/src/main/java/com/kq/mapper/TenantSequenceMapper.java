@@ -2,6 +2,8 @@ package com.kq.mapper;
 
 import org.apache.ibatis.annotations.Param;
 
+import java.util.Map;
+
 /**
  * @author: kq
  * @date: 2023-06-27 16:45:08
@@ -16,6 +18,9 @@ public interface TenantSequenceMapper {
      * @param seqName
      * @return
      */
-    public Long getTenantNextSeq(@Param("tenantId") Long tenantId, @Param("seqName")String seqName);
+    public void getTenantNextSeq(@Param("tenantId") Long tenantId, @Param("seqName")String seqName,@Param("nextSeq") Long nextSeq);
+
+
+    public void getTenantNextSeqMap(Map<String,Object> map);
 
 }

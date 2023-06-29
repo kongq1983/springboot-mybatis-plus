@@ -4,12 +4,12 @@
 
 
 
-    <select id="getTenantNextSeq" resultType="java.lang.Long">
+    <select id="getTenantNextSeq">
+        call tenant_nextval_proc(#{tenantId, mode=IN},#{seqName, mode=IN},#{nextSeq, jdbcType=BIGINT,mode=OUT});
+    </select>
 
-        set @result=0;
-        call tenant_nextval_proc(#{tenantId},#{seqName},@result);
-        select @result;
-
+    <select id="getTenantNextSeqMap" parameterType="map" statementType="CALLABLE" resultType="java.util.Map">
+        call tenant_nextval_proc(#{tenantId, mode=IN},#{seqName, mode=IN},#{nextSeq, jdbcType=BIGINT,mode=OUT});
     </select>
 
 </mapper>
