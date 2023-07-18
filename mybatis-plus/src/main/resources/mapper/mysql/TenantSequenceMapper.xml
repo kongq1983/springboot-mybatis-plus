@@ -8,8 +8,15 @@
         call tenant_nextval_proc(#{tenantId, mode=IN},#{seqName, mode=IN},#{nextSeq, jdbcType=BIGINT,mode=OUT});
     </select>
 
-    <select id="getTenantNextSeqMap" parameterType="map" statementType="CALLABLE" resultType="java.util.Map">
+    <select id="getTenantNextSeqMap" parameterType="map" statementType="CALLABLE">
         call tenant_nextval_proc(#{tenantId, mode=IN},#{seqName, mode=IN},#{nextSeq, jdbcType=BIGINT,mode=OUT});
+    </select>
+
+
+    <select id="getTableSequence" resultType="com.kq.dto.TableSequence">
+        SELECT tenant_id tenantId,seq_name seqName, current_val currentVal
+        FROM tenant_sequence
+        WHERE tenant_id=#{tenantId} AND seq_name=#{seqName} FOR update
     </select>
 
 </mapper>
